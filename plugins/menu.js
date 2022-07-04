@@ -36,13 +36,13 @@ let tags = {
 const defaultMenu = {
   before: `
 Hai, %ucapan %name! 👋
-➪*Waktu:* 
-➪%wib WIB
-➪%wita WITA
-➪%wit WIT
-➪*Hari:* %week
-➪*Tanggal:* %date
-➪*Uptime:* %uptime (%muptime)
+✫*Waktu:* 
+✫%wib WIB
+✫%wita WITA
+✫%wit WIT
+✫*Hari:* %week
+✫*Tanggal:* %date
+✫*Uptime:* %uptime (%muptime)
 
 ➪𝐌𝐚𝐦𝐩𝐢𝐫 𝐤𝐞 𝐲𝐨𝐮𝐭𝐮𝐛𝐞 𝐨𝐰𝐧𝐞𝐫
 
@@ -50,16 +50,16 @@ https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ
 
 ➪𝐆𝐫𝐨𝐮𝐩 𝐛𝐨𝐭 𝐨𝐟𝐟𝐜𝐢𝐚𝐥
 
-https://chat.whatsapp.com/IqZke0cAG6G3iVsnB9myfL
-➪*Limit:* %limit
-➪*Level:* %level
-➪*XP:* %exp
+https://chat.whatsapp.com/JqzZbqyCvBa6tXzLH1P3hZ
+✫*Limit:* %limit
+✫*Level:* %level
+✫*XP:* %exp
 %readmore`.trimStart(),
   header: ' *%category*',
   body: ' • %cmd %islimit %isPremium',
   footer: '\n',
-  after: `*Made by ♡*
-*%𝗔𝗹𝗽𝗶 𝗼𝗳𝗳𝗰* | %version
+  after: `*Made by 𝑹𝒊𝒆𝒍𝑶𝒇𝒄*
+*%𝑹𝒊𝒆𝒍 𝗼𝗳𝗳𝗰* | %version
 ${'```%npmdesc```'}
 `,
 }
@@ -163,10 +163,10 @@ let handler = async (m, { conn, usedPrefix: _p }) => {
       readmore: readMore
     }
     text = text.replace(new RegExp(`%(${Object.keys(replace).sort((a, b) => b.length - a.length).join`|`})`, 'g'), (_, name) => '' + replace[name])
-    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://youtube.com/channel/UCW7iXlE7TgvJMIXQck4NYBQ', 'Website🌟', '', '', [
-      ['Donate🌟', '/donasi'],
-      ['Sewa Bot🌟', '/sewa'],
-      ['Owner🌟', '/owner']
+    conn.sendHydrated(m.chat, text.trim(), 'Ⓟ premium | Ⓛ limit', null, 'https://github.rieltod.io', '𝑾𝑬𝑩𝑺𝑰𝑻𝑬📫', '', '', [
+      ['𝑫𝑶𝑵𝑨𝑻𝑬🏮', '/donasi'],
+      ['𝑺𝑬𝑾𝑨 𝑩𝑶𝑻📥', '/sewa'],
+      ['𝑶𝑾𝑵𝑬𝑹🐤', '/owner']
     ], m)
     /*let url = `https://telegra.ph/file/ab1df70dfd5c2bac64da1.jpg`.trim()
     let res = await fetch(url)
