@@ -5,6 +5,7 @@ let handler = async m => m.reply(`
 │╰───···─────
 │⁺◛˖ 
 ╰──────────···───╮`
+
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
 handler.tags = ['info']
