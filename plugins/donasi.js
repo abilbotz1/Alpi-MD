@@ -1,11 +1,8 @@
 let handler = async m => m.reply(`
-`››╭─〘 *Donasi* 〙
-╭╡🏮» Donasi ngab jangan gunain doang
-│┝ ➪ » 083813417529 (Axis)
-│╰───···─────
-│⁺◛˖ 
-╰──────────···───╮`
-
+╭─「 Donasi • Pulsa 」
+│ •  [083813417529] 
+│ •  [083813417529]
+╰────
 `.trim()) // Tambah sendiri kalo mau
 handler.help = ['donasi']
 handler.tags = ['info']
